@@ -18,7 +18,7 @@ app.use(express.static('public'))
 
 
 //mongoose connection
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/WorkoutTracker", {
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/Workout", {
     useNewUrlParser: true,
     useCreateIndex: true,
     useUnifiedTopology: true,
