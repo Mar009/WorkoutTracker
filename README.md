@@ -10,12 +10,12 @@
   * [Usage](#usage)
   * [License](#license)
   * [Contributing](#contributors)
-  * [Tests](#tests)
+  * [Tests](#test)
   * [Questions](#questions)
 
 
   ## Installation
-  Launch Heroku App 
+  Launch Heroku App (https://damp-retreat-52654.herokuapp.com/)
 
   ## Usage
   N/A
