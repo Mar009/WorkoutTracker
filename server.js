@@ -2,15 +2,13 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const logger = require('morgan');
-const { urlencoded } = require('express');
+
 const app = express();
 const PORT= process.env.PORT || 3000;
 
-//require
-require("./routes/apiRoutes")(app);
-require("./routes/htmlRoutes")(app);
 
-//apps
+
+//express data parsing 
 app.use(logger('dev'));
 app.use(express.urlencoded({extended: true}));
 app.use(express.json());
@@ -24,6 +22,11 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/Workout", {
     useUnifiedTopology: true,
     useFindAndModify: false
 });
+
+
+//routes
+require("./routes/apiRoutes")(app);
+require("./routes/htmlRoutes")(app);
 
 
 //listen
